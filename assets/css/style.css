@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&subset=vietnamese");
+* {
+  margin: 0;
+  padding: 0; }
+
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+------------------------------------------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+ul {
+  list-style: none; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.nav-panel-top {
+  background-color: #222222; }
+  .nav-panel-top .top-left span i {
+    color: #f47d43; }
+  .nav-panel-top .top-left span a {
+    color: #ffffff; }
+  .nav-panel-top .top-right ul li i {
+    color: #ffffff; }
+
+.nav-panel-menu .top .navbar .logo-header {
+  width: 15%; }
+  .nav-panel-menu .top .navbar .logo-header img {
+    object-fit: contain; }
+
+.nav-panel-menu .top .navbar .nav-link {
+  color: #222222; }
+
+.nav-panel-menu .top .navbar .active > .nav-link {
+  color: #1c477c;
+  border-bottom: 1px solid #1c477c; }
+
+.nav-panel-menu .top .navbar .nav-item-header {
+  margin: 2.5rem 0; }
+
+.nav-panel-menu .top .navbar .nav-item:hover .nav-link {
+  color: #1c477c;
+  border-bottom: 1px solid #1c477c; }
+
+.nav-panel-menu .dropdown-menu-container {
+  padding: .5rem 0;
+  border: 1px solid #e9ecef; }
+
+.nav-panel-menu .dropdown .dropdown-menu {
+  transition: all 0.3s;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  left: -1rem;
+  max-height: 0;
+  display: block;
+  overflow: hidden; }
+
+.nav-panel-menu .dropdown:hover .dropdown-menu {
+  max-height: 200px; }
+
+.top-footer {
+  background-color: #282828;
+  color: #ffffff; }
+  .top-footer a {
+    color: #ffffff; }
+
+.bottom-footer {
+  background-color: #222222;
+  color: #ffffff; }
+  .bottom-footer a {
+    color: #ffffff; }
+  .bottom-footer img {
+    width: 30%;
+    object-fit: contain; }
+
+.button-slide-home {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  color: #222222; }
+  .button-slide-home:hover {
+    color: #282828; }
+
+.button-slide-prev {
+  left: 0; }
+
+.button-slide-next {
+  right: 0; }
+
+.dots-slide-home-type-2 {
+  position: static; }
+
+.button-slide-home-type-2 {
+  display: none !important; }
+
+.home-slide-content {
+  object-fit: cover;
+  width: 100%;
+  height: 650px; }
+
+.section-home-2 h2 {
+  color: #1c477c; }
+
+.section-home-3 {
+  background-color: #f1f1f1; }
+
+.section-home-4 .card {
+  border: none;
+  border-radius: 0;
+  color: #ffffff; }
+  .section-home-4 .card .card-img-top {
+    overflow: hidden;
+    width: auto;
+    border: none;
+    border-radius: 0; }
+  .section-home-4 .card .card-img-top img {
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+    transition: transform .2s; }
+  .section-home-4 .card:hover .card-img-top img {
+    -ms-transform: scale(1.5);
+        transform: scale(1.5); }
+
+.section-home-4 .card:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+.section-home-4 .card-color-1 {
+  background-color: #aa0246; }
+
+.section-home-4 .card-color-2 {
+  background-color: #c7d13e; }
+
+.section-home-4 .card-color-3 {
+  background-color: #238a8b; }
+
+.section-home-4 .card-color-4 {
+  background-color: #614a6c; }
+
+.section-home-5 {
+  background-color: #f1f1f1; }
+  .section-home-5 .card {
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    position: relative; }
+    .section-home-5 .card .card-img-top {
+      overflow: hidden;
+      width: auto;
+      border: none;
+      border-radius: 0; }
+    .section-home-5 .card .card-img-top img {
+      width: 100%;
+      height: 22rem;
+      object-fit: cover; }
+    .section-home-5 .card .information {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      opacity: 0;
+      transition: opacity .2s ease-in-out; }
+    .section-home-5 .card:hover .information {
+      opacity: 0.8; }
+  .section-home-5 .card:hover {
+    color: #ffffff;
+    text-decoration: none; }
+
+.section-contact-1 {
+  background-color: #e9ecef; }
+
+.section-contact-2 .form-control {
+  border-radius: 0;
+  background-color: #e9ecef;
+  border: none; }
+  .section-contact-2 .form-control:focus {
+    border: none;
+    box-shadow: none; }
+
+.section-contact-3 .top {
+  background-color: #e9ecef; }
