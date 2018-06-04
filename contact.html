@@ -1,384 +1,124 @@
-<!doctype html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Novelty</title>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <link rel="stylesheet" href="assets/css/slick-theme.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<body>
-    <header>
-        <div class="nav-panel-top">
-            <div class="container clearfix">
-                <div class="top-left float-left pt-3 pb-3">
-                    <span>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:example@gmail.com">example@gmail.com</a>
-                    </span>
-                    <span class="ml-4">
-                        <i class="fas fa-phone-square"></i>
-                        <a href="tell:123456789">0123456789</a>
-                    </span>
-                </div>
-                <div class="top-right float-right pt-3 pb-3">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="#" target="-blank">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" target="-blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" target="-blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" target="-blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<body class="contact">
+<div class="container">
+    <div class="row contact-body">
+        <div class="left-session">
+            <form action="/#.php" class="contact-form">
+                <input type="text" name="name" placeholder="Họ và tên"><br>
+                <input type="tel" name="phone" placeholder="Số điện thoại"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="text" name="title" placeholder="Tiêu đề"><br>
+                <input type="text" name="content" placeholder="Nội dung"><br>
+                <input class="button-submit" type="submit" value="Liên hệ ngay">
+            </form>
         </div>
-        <div class="nav-panel-menu container container-fluid">
-            <div class="row">
-                <div class="top col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light p-0">
-                        <a class="navbar-brand logo-header" href="/">
-                            <img src="assets\img\logo.png" class="img-fluid">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link pl-0 pr-0 mr-2 nav-item-header text-uppercase" href="/">
-                                        Trang chủ
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link pl-0 pr-0 mx-2 nav-item-header text-uppercase" href="#" id="navbarDropdown">
-                                        Giới thiệu
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-hover mt-0" aria-labelledby="navbarDropdown">
-                                        <div class="dropdown-menu-container">
-                                            <a class="dropdown-item" href="#">Giới thiệu</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Thư ngõ</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link pl-0 pr-0 mx-2 nav-item-header text-uppercase" href="#" id="navbarDropdown">
-                                        Sinh trắc vân tay
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-hover mt-0" aria-labelledby="navbarDropdown">
-                                        <div class="dropdown-menu-container">
-                                            <a class="dropdown-item" href="#">Dịch vụ</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Vân tay học</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Hỏi và đáp</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link pl-0 pr-0 mx-2 nav-item-header text-uppercase" href="#" id="navbarDropdown">
-                                        Công nghệ sinh trắc
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-hover mt-0" aria-labelledby="navbarDropdown">
-                                        <div class="dropdown-menu-container">
-                                            <a class="dropdown-item" href="#">Dịch vụ</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Vân tay học</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Hỏi và đáp</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link pl-0 pr-0 mx-2 nav-item-header text-uppercase" href="#" id="navbarDropdown">
-                                        Sự kiện
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdown">
-                                        <div class="dropdown-menu-container">
-                                            <a class="dropdown-item" href="#">Tin tức</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Các sự kiện mới nhất</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Cộng đồng</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link pl-0 pr-0 mx-2 nav-item-header text-uppercase" href="#" id="navbarDropdown">
-                                        Đăng ký nhanh
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-hover mt-0" aria-labelledby="navbarDropdown">
-                                        <div class="dropdown-menu-container">
-                                            <a class="dropdown-item" href="#">Đăng ký chương trình</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link pl-0 pr-0 ml-2 nav-item-header text-uppercase" href="/contact.html">
-                                        Liên hệ
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+        <div class="right-session">
+            <div class="top-body-contact">
+                <p class="contact-title">Liên hệ</p>
+                <p class="message">ĐỂ LẠI TIN NHẮN CHO NOVELTY</p>
             </div>
-        </div>
-    </header>
-    <section class="section-contact section-contact-1">
-        <h1 class="d-flex justify-content-center py-5">CONTACT US</h1>
-    </section>
-    <section class="section-contact section-contact-2 container my-5">
-        <div class="row">
-            <div class="col-6 pr-4">
-                <h2 class="pb-3 text-uppercase">Gửi lời nhắn cho chúng tôi</h2>
-                <form>
-                    <div class="form-group pt-4">
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên*">
+            <div class="middle-body-contact">
+                <div class="head-quarters-session">
+                    <div class="title-head-quarters left-session">
+                        <p>Trụ sở</p>
                     </div>
-                    <div class="form-group pt-4">
-                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email*">
-                    </div>
-                    <div class="form-group pt-4">
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Website">
-                    </div>
-                    <div class="form-group pt-4">
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Tiêu đề*">
-                    </div>
-                    <div class="form-group pt-4">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Lời nhắn" rows="3"></textarea>
-                    </div>
-                    <button type="submit pt-4" class="btn btn-primary">GỬI</button>
-                </form>
-            </div>
-            <div class="col-6 pl-4">
-                <h2 class="pb-3 text-uppercase">Địa chỉ liên hệ</h2>
-                <p class="pb-3 text-uppercase font-weight-light">THERE ARE MANY VARIATIONS OF PASSAGES</p>
-                <p class="py-4 font-weight-light">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer
-                    lectus. Praesent sed nisi eleifend, fermentum orci amet,iaculis libero. Donec vel ultricies purus.</p>
-                <ul class="list-unstyled font-weight-light pd-4">
-                    <li>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-1 px-0">
-                                    <i class="far fa-map"></i>
-                                </div>
-                                <div class="col px-0">
-                                    <p>Tầng 10, số 14 Láng Hạ, phường Thành Công, quận Ba Đình, Tp. Hà Nội</p>
+                    <div class="content-head-quarters right-session">
+                        <div class="sector-box">
+                            <div class="name-sector">
+                                <p>Miền nam</p>
+                            </div>
+                            <div class="all-address">
+                                <div class="address-detail">
+                                    <p>Tổng công ty may Nhà Bè - CTCP</p>
+                                    <p>4 Đường Bến Nghé, P.Tân Thuận Đông, Q. 7, TP. HCM</p>
+                                    <p>Điện thoại 1: 08.38 720 077</p>
+                                    <p>Điện thoại 2: 08 38 724 412</p>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-1 px-0">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <div class="col px-0">
-                                    <p>0123456789</p>
+                        <div class="sector-box">
+                            <div class="name-sector">
+                                <p>Miền bắc</p>
+                            </div>
+                            <div class="all-address">
+                                <div class="address-detail">
+                                    <p>Văn phòng đại diện</p>
+                                    <p>10 lô 11A, Khu đô thị mới Trung Yên, P.Trung Hòa, Q. Cầu Giấy, Thủ đô Hà Nội</p>
+                                    <p>Điện thoại: 04.35 123 882</p>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-1 px-0">
-                                    <i class="far fa-envelope"></i>
-                                </div>
-                                <div class="col px-0">
-                                    <p>abc@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item">
-                        <button type="button" class="btn btn-outline-dark">
-                            <i class="fab fa-facebook-f"> </i>
-                        </button>
-                    </li>
-                    <li class="list-inline-item">
-                        <button type="button" class="btn btn-outline-dark">
-                            <i class="fab fa-instagram"> </i>
-                        </button>
-                    </li>
-                    <li class="list-inline-item">
-                        <button type="button" class="btn btn-outline-dark">
-                            <i class="fab fa-google"> </i>
-                        </button>
-                    </li>
-                    <li class="list-inline-item">
-                        <button type="button" class="btn btn-outline-dark">
-                            <i class="fab fa-linkedin-in"></i>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="section-contact section-contact-3">
-        <div class="top">
-            <h1 class="d-flex justify-content-center py-5 m-0">LÀM THẾ NÀO ĐỂ TÌM THẤY CHÚNG TÔI?</h1>
-        </div>
-        <div class="bottom">
-            <div id="image-show-ggapi">
-            </div>
-        </div>
-    </section>
-    <footer class="page-footer">
-        <div class="top-footer py-5">
-            <div class="container text-center text-md-left">
-                <div class="row">
-
-                    <!--First column-->
-                    <div class="col-md-4 pr-4">
-                        <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">GIỚI THIỆU</h5>
-                        <p class="font-weight-light">STEAMe GARTEN là chuỗi trường mầm non công nghệ chất lượng cao được đầu tư bởi tập đoàn giáo dục
-                            hàng đầu Việt Nam – Egroup. Với khao khát xây dựng mô hình trường mầm non công nghệ đầu tiên
-                            tại Việt Nam, STEAMe GARTEN tự hào là một trong số ít Chuỗi trường Mầm non đầu tiên đưa STEAM
-                            và phương pháp dạy học Dự án vào chương trình chính khóa.</p>
                     </div>
-                    <!--/.First column-->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!--Second column-->
-                    <div class="col-md-4">
-                        <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">CÁC ĐIỂM TRƯỜNG</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <h6 class="font-weight-bold">STEAMe GARTEN Hà Đông</h6>
-                                <p class="font-weight-light">Tầng 3, Tòa C, Hồ Gươm Plaza, 110 Trần Phú, Hà Đông, Hà Nội</p>
-                            </li>
-                            <li>
-                                <h6 class="font-weight-bold">STEAMe GARTEN Hà Đông</h6>
-                                <p class="font-weight-light">Tầng 3, Tòa C, Hồ Gươm Plaza, 110 Trần Phú, Hà Đông, Hà Nội</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/.Second column-->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!--Third column-->
-
-                    <div class="col-md-4 pl-4">
-                        <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">LIÊN HỆ</h5>
-                        <ul class="list-unstyled font-weight-light">
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-1 px-0">
-                                            <i class="far fa-map"></i>
-                                        </div>
-                                        <div class="col px-0">
-                                            <p>Tầng 10, số 14 Láng Hạ, phường Thành Công, quận Ba Đình, Tp. Hà Nội</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-1 px-0">
-                                            <i class="fas fa-mobile-alt"></i>
-                                        </div>
-                                        <div class="col px-0">
-                                            <p>0123456789</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-1 px-0">
-                                            <i class="far fa-envelope"></i>
-                                        </div>
-                                        <div class="col px-0">
-                                            <p>abc@gmail.com</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/.Third column-->
                 </div>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="container pt-5 pb-5">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-md-start justify-content-center">
-                        <img src="assets\img\logo-footer.png">
+                <div class="showroom-session">
+                    <div class="title-showroom left-session">
+                        <p>Showroom</p>
                     </div>
-                    <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
-                        © 2018 Copyright:
-                        <a href="https://desi.vn/"> desi.vn </a>
-                    </div>
-                    <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-md-end justify-content-sm-center justify-content-center">
-                        <ul class="list-unstyled list-inline mb-0">
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm mx-2">
-                                    <i class="fab fa-facebook-f"> </i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm mx-2">
-                                    <i class="fab fa-instagram"> </i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm mx-2">
-                                    <i class="fab fa-google-plus-g"> </i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm mx-2">
-                                    <i class="fab fa-linkedin-in"> </i>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="content-showroom right-session">
+                        <div class="sector-box">
+                            <div class="name-sector">
+                                <p>Miền bắc</p>
+                            </div>
+                            <div class="all-address">
+                                <div class="address-detail">
+                                    <p>Showroom Cầu Giấy</p>
+                                    <p>4 Đường Bến Nghé, P.Tân Thuận Đông, Q. 7</p>
+                                    <p>Điện thoại: 08.38 720 077</p>
+                                </div>
+                                <div class="address-detail">
+                                    <p>Showroom Nam Định</p>
+                                    <p>4 Đường Bến Nghé, P.Tân Thuận Đông, Q. 7</p>
+                                    <p>Điện thoại: 08.38 720 077</p>
+                                </div>
+                                <div class="address-detail">
+                                    <p>Showroom Hải Phòng</p>
+                                    <p>4 Đường Bến Nghé, P.Tân Thuận Đông, Q. 7</p>
+                                    <p>Điện thoại: 08.38 720 077</p>
+                                </div>
+                                <div class="address-detail">
+                                    <p>Showroom Kim Mã</p>
+                                    <p>4 Đường Bến Nghé, P.Tân Thuận Đông, Q. 7</p>
+                                    <p>Điện thoại: 08.38 720 077</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sector-box">
+                            <div class="name-sector">
+                                <p>Miền nam</p>
+                            </div>
+                            <div class="all-address">
+                                <div class="address-detail">
+                                    <p>Showroom Hai Bà Trưng</p>
+                                    <p>10 lô 11A, Khu đô thị mới Trung Yên, P.Trung Hòa, Q. Cầu Giấy, Thủ đô Hà Nội</p>
+                                    <p>Điện thoại: 04.35 123 882</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="assets/js/scripts.js"></script>
+    </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
