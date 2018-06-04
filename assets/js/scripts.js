@@ -1,6 +1,6 @@
 'use strict';
 var $ = jQuery;
-$(document).ready(function() {
+$(document).ready(function () {
     // change value item in shopping bag
     var spins = document.getElementsByClassName('spin');
     for (var i = 0, len = spins.length; i < len; i++) {
@@ -8,13 +8,13 @@ $(document).ready(function() {
             span = spin.getElementsByTagName('span'),
             input = spin.getElementsByTagName('input')[0];
 
-        input.onchange = function() {
+        input.onchange = function () {
             input.value = +input.value || 0;
         };
-        span[0].onclick = function() {
+        span[0].onclick = function () {
             input.value = Math.max(0, input.value - 1);
         };
-        span[1].onclick = function() {
+        span[1].onclick = function () {
             input.value -= -1;
         };
     }
@@ -95,4 +95,20 @@ $(document).ready(function() {
         nextArrow: '<i class="fa fa-angle-left nextBtn"></i>',
         prevArrow: '<i class="fa fa-angle-right prevBtn"></i>',
     });
+});
+
+$('.menu-button').on('click', function () {
+    if ($('.menu-show').is(':visible')) {
+        $('.menu-show').animate({
+            'height': 'hide'
+        }, 300, function () {
+            $('.menu-show').fadeOut(300);
+        });
+    } else {
+        $('.menu-show').animate({
+            'height': 'show'
+        }, 300, function () {
+            $('.menu-show').fadeIn(300);
+        });
+    };
 });
