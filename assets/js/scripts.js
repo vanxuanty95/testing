@@ -95,6 +95,48 @@ $(document).ready(function () {
         nextArrow: '<i class="fa fa-angle-left nextBtn"></i>',
         prevArrow: '<i class="fa fa-angle-right prevBtn"></i>',
     });
+
+    // slide product in product detail page
+    $(".slide-slick-product-detail").slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '<p class="next-button">Sau</p>',
+        prevArrow: '<p class="prev-button">Trước</p>',
+        responsive: [
+            {
+                breakpoint: 980, // tablet breakpoint
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480, // mobile breakpoint
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
+    // slide to show image product detail page
+    $('.slider-for-image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        asNavFor: '.slider-nav-image',
+    });
+    $('.slider-nav-image').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for-image',
+        dots: true,
+        arrows: false,
+        focusOnSelect: true
+    });
 });
 
 $('.menu-button').on('click', function () {
@@ -110,5 +152,5 @@ $('.menu-button').on('click', function () {
         }, 300, function () {
             $('.menu-show').fadeIn(300);
         });
-    };
+    }
 });
