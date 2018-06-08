@@ -3408,6 +3408,11 @@ body.distributor .container-fullwidth {
         body.distributor .container-fullwidth .right .category .distributor-category .distributor-item .col-md-6 {
           padding-left: 0;
           padding-right: 0; }
+        body.distributor .container-fullwidth .right .category .distributor-category .distributor-item .col-left {
+          text-align: end;
+          padding-right: 10%; }
+        body.distributor .container-fullwidth .right .category .distributor-category .distributor-item hr {
+          margin-right: 10%; }
       body.distributor .container-fullwidth .right .category .distributor-category a:focus,
       body.distributor .container-fullwidth .right .category .distributor-category a:hover {
         color: #5C5C5C;
