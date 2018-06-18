@@ -153,4 +153,24 @@ $('.menu-button').on('click', function () {
             $('.menu-show').fadeIn(300);
         });
     }
+    var css = $(this).children().children('.menu-toggle-icon');
+    var cs = css.attr("class");
+    if(cs == 'menu-toggle-icon glyphicon glyphicon-menu-hamburger') {
+        $(css).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+    }
+    if(cs == 'menu-toggle-icon glyphicon glyphicon-remove') {
+        $(css).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+    }
+});
+
+$('ul.nav-left-ml').toggle();
+$('label.nav-toggle span').click(function () {
+  $(this).parent().parent().children('ul.nav-left-ml').toggle(300);
+  var cs = $(this).attr("class");
+  if(cs == 'nav-toggle-icon glyphicon glyphicon-plus') {
+    $(this).removeClass('glyphicon-plus').addClass('glyphicon-minus');
+  }
+  if(cs == 'nav-toggle-icon glyphicon glyphicon-minus') {
+    $(this).removeClass('glyphicon-minus').addClass('glyphicon-plus');
+  }
 });
