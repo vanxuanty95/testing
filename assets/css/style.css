@@ -244,7 +244,8 @@ header .main-header {
     margin-bottom: 0;
     font-weight: 600; }
     .menu-show .right label .nav-toggle-icon {
-      margin-left: 5px; }
+      margin-left: 5px;
+      font-size: 11px; }
   .menu-show .right .container-search {
     background-color: #F2F2F3;
     padding: 6vh 15%; }
