@@ -1,25 +1,31 @@
 'use strict';
 var $ = jQuery;
 $(document).ready(function () {
-    // change value item in shopping bag
-    var spins = document.getElementsByClassName('spin');
-    for (var i = 0, len = spins.length; i < len; i++) {
-        var spin = spins[i],
-            span = spin.getElementsByTagName('span'),
-            input = spin.getElementsByTagName('input')[0];
+    // remove item in shopping bag
+    $('[data-remove]').click(function () {
+        var id = $(this).data('remove');
+        $('[data-product=' + id + ']').remove();
+        console.log(id);
+    });
+    // change value number of product in shopping bag
+    $('[data-minus]').click(function () {
+        var id = $(this).data('minus');
+        var input = $('[data-num=' + id + ']');
+        var num = parseInt(input.val());
+        --num;
+        var newNum = num < 0 ? 0 : num;
+        input.val(newNum);
+    });
 
-        input.onchange = function () {
-            input.value = +input.value || 0;
-        };
-        span[0].onclick = function () {
-            input.value = Math.max(0, input.value - 1);
-        };
-        span[1].onclick = function () {
-            input.value -= -1;
-        };
-    }
+    $('[data-add]').click(function () {
+        var id = $(this).data('add');
+        var input = $('[data-num=' + id + ']');
+        var num = parseInt(input.val());
+        var newNum = ++num;
+        input.val(newNum);
+    });
     // slide in news detail page
-    $(".slide-slick-news").slick({
+    $('.slide-slick-news').slick({
         dots: true,
         infinite: false,
         slidesToShow: 3,
@@ -43,7 +49,7 @@ $(document).ready(function () {
     });
 
     // slide in product new page
-    $(".slide-slick-product").slick({
+    $('.slide-slick-product').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
