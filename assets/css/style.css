@@ -1927,7 +1927,7 @@ body.about .row-6 .row6-column-3 {
 body.about .row-7 {
   line-height: 30px; }
   body.about .row-7 .container {
-    padding: 150px 20% 150px 3%;
+    padding: 150px 20% 110px 3%;
     margin-right: 0;
     font-weight: 600;
     font-size: 18px; }
@@ -1937,7 +1937,7 @@ body.about .row-7 {
 body.about .row-8 {
   line-height: 30px; }
   body.about .row-8 .container {
-    padding: 0 0 150px 3%;
+    padding: 0 0 110px 3%;
     margin-right: 0;
     font-weight: 600;
     font-size: 18px; }

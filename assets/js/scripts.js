@@ -146,26 +146,26 @@ $(document).ready(function () {
 });
 
 $('.menu-button').on('click', function () {
+    var css = $(this).children().children('.menu-toggle-icon');
+    var cs = css.attr("class");
     if ($('.menu-show').is(':visible')) {
         $('.menu-show').animate({
             'height': 'hide'
         }, 300, function () {
             $('.menu-show').fadeOut(300);
         });
+        if(cs == 'menu-toggle-icon glyphicon glyphicon-remove') {
+            $(css).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+        }
     } else {
         $('.menu-show').animate({
             'height': 'show'
         }, 300, function () {
             $('.menu-show').fadeIn(300);
         });
-    }
-    var css = $(this).children().children('.menu-toggle-icon');
-    var cs = css.attr("class");
-    if(cs == 'menu-toggle-icon glyphicon glyphicon-menu-hamburger') {
-        $(css).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
-    }
-    if(cs == 'menu-toggle-icon glyphicon glyphicon-remove') {
-        $(css).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+        if(cs == 'menu-toggle-icon glyphicon glyphicon-menu-hamburger') {
+            $(css).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+        }
     }
 });
 
@@ -179,4 +179,43 @@ $('label.nav-toggle span').click(function () {
   if(cs == 'nav-toggle-icon glyphicon glyphicon-triangle-top') {
     $(this).removeClass('glyphicon-triangle-top').addClass('glyphicon-triangle-bottom');
   }
+});
+
+$('#location-distributor').click(
+    function(){
+        var pr = $(this).parent().attr('class')
+        if(pr === 'btn-group open'){
+            $(this).children('span.symbol').text('+')
+        }else{
+            $(this).children('span.symbol').text('-')
+        }
+        
+    }
+)
+
+$('#channel-distributor').click(
+    function(){
+        var pr = $(this).parent().attr('class')
+        if(pr === 'btn-group open'){
+            $(this).children('span.symbol').text('+')
+        }else{
+            $(this).children('span.symbol').text('-')
+        }
+        
+    }
+)
+
+$(window).click(function() {
+    var pr = $('#location-distributor-btn').parent().parent().attr('class');
+    if( pr === 'btn-group open'){
+        $('#-distributor-btn').text('-')
+    }else{
+        $('#location-distributor-btn').text('+')
+    }
+    var pr2 = $('#channel-distributor-btn').parent().parent().attr('class');
+    if( pr2 === 'btn-group open'){
+        $('#channel-distributor-btn').text('-')
+    }else{
+        $('#channel-distributor-btn').text('+')
+    }
 });
