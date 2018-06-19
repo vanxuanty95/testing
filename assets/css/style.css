@@ -1666,6 +1666,7 @@ body.home .row-6 {
     transition-duration: 0.4s;
     background-color: #000000; }
     body.home .row-6 .column .container-tag {
+      background-color: #000000;
       position: absolute;
       width: 100%;
       text-align: center;
@@ -1685,6 +1686,7 @@ body.home .row-6 {
     transition-duration: 0.4s;
     background-color: #ffffff; }
     body.home .row-6 .column:hover .container-tag {
+      background-color: #ffffff;
       transition-duration: 0.4s; }
       body.home .row-6 .column:hover .container-tag p {
         transition-duration: 0.4s;
