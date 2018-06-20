@@ -219,3 +219,40 @@ $(window).click(function() {
         $('#channel-distributor-btn').text('+')
     }
 });
+
+var windw = this;
+
+$.fn.followTo = function ( elem ) {
+    var $this = this,
+        $window = $(windw),
+        $bumper = $(elem),
+        bumperPos = $bumper.offset().top,
+        startingPos = $this.offset().top,
+        defaultPosType = $this.css('position'),
+        thisHeight = $this.outerHeight(),
+        setPosition = function(){
+            if ($window.scrollTop() > (bumperPos - thisHeight)) {
+                $this.css({
+                    position: 'absolute',
+                    top: (bumperPos - thisHeight - startingPos),
+                    width: '100%'
+                });
+            } else if ($window.scrollTop() < (startingPos)) {
+                $this.css({
+                    position: defaultPosType,
+                    top: startingPos,
+                    width: '100%'
+                });
+            } else {
+                $this.css({
+                    position: 'fixed',
+                    top: 0,
+                    width: '351px',
+                });
+            }
+        };
+    $window.scroll(setPosition);
+    setPosition();
+};
+
+$('#one').followTo('#two');
