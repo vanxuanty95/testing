@@ -59,17 +59,6 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
     });
 
-    // slide in look book gallery page
-    $('.slide-slick-lookbook').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: true,
-        nextArrow: '<p class="next-button">Sau</p>',
-        prevArrow: '<p class="prev-button">Trước</p>',
-        centerMode: true,
-        focusOnSelect: true
-    });
-
     // slide in uniform gallery page
     $('.slide-slick-uniform').slick({
         infinite: true,
@@ -143,6 +132,11 @@ $(document).ready(function () {
         arrows: false,
         focusOnSelect: true
     });
+
+    if ($('#one').length !== 0) {
+        $('#one').followTo('#two');
+    }
+
 });
 
 $('.menu-button').on('click', function () {
@@ -154,7 +148,7 @@ $('.menu-button').on('click', function () {
         }, 300, function () {
             $('.menu-show').fadeOut(300);
         });
-        if(cs == 'menu-toggle-icon glyphicon glyphicon-remove') {
+        if (cs == 'menu-toggle-icon glyphicon glyphicon-remove') {
             $(css).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
         }
     } else {
@@ -163,7 +157,7 @@ $('.menu-button').on('click', function () {
         }, 300, function () {
             $('.menu-show').fadeIn(300);
         });
-        if(cs == 'menu-toggle-icon glyphicon glyphicon-menu-hamburger') {
+        if (cs == 'menu-toggle-icon glyphicon glyphicon-menu-hamburger') {
             $(css).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
         }
     }
@@ -171,88 +165,151 @@ $('.menu-button').on('click', function () {
 
 $('ul.nav-left-ml').toggle();
 $('label.nav-toggle span').click(function () {
-  $(this).parent().parent().children('ul.nav-left-ml').toggle(300);
-  var cs = $(this).attr("class");
-  if(cs == 'nav-toggle-icon glyphicon glyphicon-triangle-bottom') {
-    $(this).removeClass('glyphicon-triangle-bottom').addClass('glyphicon-triangle-top');
-  }
-  if(cs == 'nav-toggle-icon glyphicon glyphicon-triangle-top') {
-    $(this).removeClass('glyphicon-triangle-top').addClass('glyphicon-triangle-bottom');
-  }
+    $(this).parent().parent().children('ul.nav-left-ml').toggle(300);
+    var cs = $(this).attr("class");
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-bottom') {
+        $(this).removeClass('glyphicon-triangle-bottom').addClass('glyphicon-triangle-top');
+    }
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-top') {
+        $(this).removeClass('glyphicon-triangle-top').addClass('glyphicon-triangle-bottom');
+    }
 });
 
 $('#location-distributor').click(
-    function(){
+    function () {
         var pr = $(this).parent().attr('class')
-        if(pr === 'btn-group open'){
+        if (pr === 'btn-group open') {
             $(this).children('span.symbol').text('+')
-        }else{
+        } else {
             $(this).children('span.symbol').text('-')
         }
-        
+
     }
 )
 
 $('#channel-distributor').click(
-    function(){
+    function () {
         var pr = $(this).parent().attr('class')
-        if(pr === 'btn-group open'){
+        if (pr === 'btn-group open') {
             $(this).children('span.symbol').text('+')
-        }else{
+        } else {
             $(this).children('span.symbol').text('-')
         }
-        
+
     }
 )
 
-$(window).click(function() {
+$(window).click(function () {
     var pr = $('#location-distributor-btn').parent().parent().attr('class');
-    if( pr === 'btn-group open'){
+    if (pr === 'btn-group open') {
         $('#-distributor-btn').text('-')
-    }else{
+    } else {
         $('#location-distributor-btn').text('+')
     }
     var pr2 = $('#channel-distributor-btn').parent().parent().attr('class');
-    if( pr2 === 'btn-group open'){
+    if (pr2 === 'btn-group open') {
         $('#channel-distributor-btn').text('-')
-    }else{
+    } else {
         $('#channel-distributor-btn').text('+')
     }
 });
 
 var windw = this;
 
-$.fn.followTo = function ( elem ) {
+$.fn.followTo = function (elem) {
+    var isPC = true;
+    if($(windw).width()<=1024){
+        isPC=false;
+    }else{
+        true;
+    }
+    var bumperPos = $(elem).offset().top;
     var $this = this,
         $window = $(windw),
-        $bumper = $(elem),
-        bumperPos = $bumper.offset().top,
         startingPos = $this.offset().top,
         defaultPosType = $this.css('position'),
         thisHeight = $this.outerHeight(),
-        setPosition = function(){
-            if ($window.scrollTop() > (bumperPos - thisHeight)) {
-                $this.css({
-                    position: 'absolute',
-                    top: (bumperPos - thisHeight - startingPos),
-                    width: '100%'
-                });
-            } else if ($window.scrollTop() < (startingPos)) {
-                $this.css({
-                    position: defaultPosType,
-                    top: startingPos,
-                    width: '100%'
-                });
-            } else {
-                $this.css({
-                    position: 'fixed',
-                    top: 0,
-                    width: '351px',
-                });
+        setPosition = function () {
+            if (isPC) {
+                if ($window.scrollTop() > (bumperPos - thisHeight)) {
+                    $this.css({
+                        position: 'absolute',
+                        top: (bumperPos - thisHeight - startingPos),
+                        width: '100%'
+                    });
+                } else if ($window.scrollTop() < (startingPos)) {
+                    $this.css({
+                        position: defaultPosType,
+                        top: startingPos,
+                        width: '100%'
+                    });
+                } else {
+                    $this.css({
+                        position: 'fixed',
+                        top: 0,
+                        width: '351px',
+                    });
+                }
+            }else{
+                $this.attr( "style", "" );
             }
         };
+    $window.resize(function () {
+        var windowsize = $window.width();
+        if(windowsize <= 1024){
+            isPC = false
+        }else{
+            isPC = true;
+        }
+        bumperPos = $(elem).offset().top;
+        setPosition();
+    });
     $window.scroll(setPosition);
     setPosition();
 };
 
-$('#one').followTo('#two');
+$(".open_modal_lookbook").on("click", function(){
+    function show_popup(){
+        $('.slide-slick-lookbook').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            nextArrow: '<p class="next-button">Sau</p>',
+            prevArrow: '<p class="prev-button">Trước</p>',
+            centerMode: true,
+            focusOnSelect: true,
+        });
+     };
+     var cs = $(".slide-slick-lookbook");
+    if(!cs.hasClass("slick-initialized")){
+        window.setTimeout( show_popup, 200 );
+        $('.slide-slick-lookbook').resize();
+    }else{
+        window.setTimeout( function(){
+            $('.slide-slick-lookbook').slick("refresh");
+        }, 200 );
+    }
+})
+
+$(".open_modal_lookbook").on("click", function(){
+    function show_popup(){
+        $('.slide-slick-uniform').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            nextArrow: '<p class="next-button">Sau</p>',
+            prevArrow: '<p class="prev-button">Trước</p>',
+            centerMode: true,
+            focusOnSelect: true,
+        });
+     };
+     var cs = $(".slide-slick-uniform");
+    if(!cs.hasClass("slick-initialized")){
+        window.setTimeout( show_popup, 200 );
+        $('.slide-slick-uniform').resize();
+    }else{
+        window.setTimeout( function(){
+            $('.slide-slick-uniform').slick("refresh");
+        }, 200 );
+    }
+})
