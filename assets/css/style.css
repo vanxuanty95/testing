@@ -264,7 +264,7 @@ header .main-header {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+          flex-wrap: wrap;
       margin-right: 0;
       margin-left: 0; }
   .menu-show .left {
@@ -5517,7 +5517,7 @@ body.distributor .container-fullwidth {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-right: 0;
     margin-left: 0; }
   body.distributor .container-fullwidth .left {
