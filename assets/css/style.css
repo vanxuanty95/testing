@@ -2884,9 +2884,6 @@ body.product-new .container .banner {
 body.product-new .container .menu {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-  flex-wrap: wrap-reverse;
   margin-bottom: 80px; }
   body.product-new .container .menu .wrap-menu {
     width: 50%;
@@ -3137,6 +3134,9 @@ body.product-new .bottom-spacing {
     body.product-new .container .banner .prevArrowBtn {
       right: 10px; }
   body.product-new .container .menu {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
     margin-bottom: 80px; }
     body.product-new .container .menu .wrap-menu {
       width: 100%;
@@ -5525,7 +5525,7 @@ div.uniform-gallery .bottom-right-session {
       height: 400px;
       outline: none; }
     div.uniform-gallery .slide-slick-uniform img {
-      width: 85%;
+      width: 95%;
       height: 350px;
       margin-left: auto;
       margin-right: auto;
