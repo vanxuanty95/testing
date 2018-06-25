@@ -59,18 +59,6 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
     });
 
-    // slide in uniform gallery page
-    $('.slide-slick-uniform').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: true,
-        nextArrow: '<p class="next-button">Sau</p>',
-        prevArrow: '<p class="prev-button">Trước</p>',
-        centerMode: true,
-        focusOnSelect: true
-    });
-
     // slide client in uniform page
     $('.slide-slick-clients').slick({
         infinite: true,
@@ -278,6 +266,20 @@ $(".open_modal_lookbook").on("click", function(){
             prevArrow: '<p class="prev-button">Trước</p>',
             centerMode: true,
             focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 980, // tablet breakpoint
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480, // mobile breakpoint
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
      };
      var cs = $(".slide-slick-lookbook");
@@ -301,6 +303,20 @@ $(".open_modal_lookbook").on("click", function(){
             prevArrow: '<p class="prev-button">Trước</p>',
             centerMode: true,
             focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 980, // tablet breakpoint
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480, // mobile breakpoint
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
      };
      var cs = $(".slide-slick-uniform");
