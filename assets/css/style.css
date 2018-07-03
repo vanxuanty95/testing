@@ -2652,16 +2652,13 @@ body.about .row-eq-height {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  /*to enable responsiveness*/ }
+      flex-wrap: wrap; }
 
 body.about .row-eq-height > [class*="col-"] {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex: 1 0 auto;
-      flex: 1 0 auto; }
+      flex-direction: column; }
 
 body.about .row-1 {
   overflow: hidden;
