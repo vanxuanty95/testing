@@ -2658,7 +2658,9 @@ body.about .row-eq-height > [class*="col-"] {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  -ms-flex: 1 0 30%;
+      flex: 1 0 30%; }
 
 body.about .row-1 {
   overflow: hidden;
@@ -2937,6 +2939,9 @@ body.about .row-8 {
     padding: 45px 15px; }
   body.about .row-2 .row2-column-2 {
     margin-top: 0; }
+  body.about .row-eq-height > [class*="col-"] {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto; }
   body.about .row-2 .row2-column-2 .top-row {
     margin-left: 0; }
   body.about .row-2 .row2-column-2 .bottom-row {
