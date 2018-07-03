@@ -2651,6 +2651,7 @@ body.about .container-fullwidth {
 body.about .row-eq-height {
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   /*to enable responsiveness*/ }
