@@ -145,10 +145,64 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
-    if ($('#one').length !== 0) {
-        $('#one').followTo('#two');
-    }
+    if ($('#one') != null) {
+        var isPC = true;
+        var $window = $(window);
 
+        var windowsize = $window.width();
+            if(windowsize <= 1024){
+                isPC = false
+            }else{
+                isPC = true;
+            }
+
+        var scrollFunc = function() {
+            var header = $('header');
+            var headerHeight = header.height();
+            var $one = $('#one');
+            var footerStart = $('body').height() - $('footer').height() - 500;
+        
+            $window.scroll(function(){
+                if (isPC) {
+                    if ($('.menu-show').is(':visible')) {
+                        headerHeight = header.height();
+                    } else {
+                        headerHeight = header.height();
+                    }
+                    if ($window.scrollTop() > headerHeight && $window.scrollTop() < footerStart) {
+                        $one.css({
+                            position: 'fixed',
+                            top: 0,
+                            width: '345px',
+                            bottom: 'auto'
+                        });
+                    } else if ($window.scrollTop() <= headerHeight) {
+                        $one.css({
+                            position: 'relative',
+                            top: 'auto',
+                            width: 'auto'
+                        });
+                    } else if ($window.scrollTop() >= footerStart) {
+                        $one.css({
+                            position: 'absolute',
+                            width: '100%',
+                            bottom: '0',
+                            top: 'auto'
+                        });
+                    }
+                }
+            });
+        }
+        scrollFunc();
+        $window.resize(function () {
+            var windowsize = $window.width();
+            if(windowsize <= 1024){
+                isPC = false
+            }else{
+                isPC = true;
+            }
+        });
+    }
 });
 
 $('.menu-button').on('click', function () {
@@ -259,7 +313,7 @@ $.fn.followTo = function (elem) {
                     $this.css({
                         position: 'fixed',
                         top: 0,
-                        width: '351px',
+                        width: '345px',
                     });
                 }
             }else{
@@ -277,6 +331,7 @@ $.fn.followTo = function (elem) {
         setPosition();
     });
     $window.scroll(setPosition);
+    setPosition();
     setPosition();
 };
 

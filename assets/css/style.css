@@ -2868,8 +2868,6 @@ body.about .row-8 {
   body.about .row-8 .lookbook-item {
     width: 50%; }
   body.about .row-8 .slide-slick-lookbook {
-    display: -ms-flexbox;
-    display: flex;
     position: relative; }
     body.about .row-8 .slide-slick-lookbook .lookbook-item {
       height: 300px;
@@ -5449,7 +5447,7 @@ div.lookbook-gallery .bottom-right-session {
     div.lookbook-gallery .slide-slick-lookbook .slick-dots {
       width: auto;
       bottom: -40px;
-      left: 22%; }
+      left: 25%; }
     div.lookbook-gallery .slide-slick-lookbook .slick-dots li {
       margin: 0;
       width: auto;
@@ -5467,7 +5465,7 @@ div.lookbook-gallery .bottom-right-session {
       content: none; }
     div.lookbook-gallery .slide-slick-lookbook p.prev-button, div.lookbook-gallery .slide-slick-lookbook p.next-button {
       position: absolute;
-      bottom: -145px;
+      bottom: -85px;
       font-weight: 600;
       cursor: pointer;
       z-index: 2; }
@@ -5809,7 +5807,7 @@ div.uniform-gallery .bottom-right-session {
     div.uniform-gallery .slide-slick-uniform .slick-dots {
       width: auto;
       bottom: -40px;
-      left: 22%; }
+      left: 25%; }
     div.uniform-gallery .slide-slick-uniform .slick-dots li {
       margin: 0;
       width: auto;
@@ -5827,7 +5825,7 @@ div.uniform-gallery .bottom-right-session {
       content: none; }
     div.uniform-gallery .slide-slick-uniform p.prev-button, div.uniform-gallery .slide-slick-uniform p.next-button {
       position: absolute;
-      bottom: -145px;
+      bottom: -85px;
       font-weight: 600;
       cursor: pointer;
       z-index: 2; }
@@ -6326,15 +6324,15 @@ body.uniform .modal {
     position: absolute;
     font-size: 2em;
     font-weight: 800;
-    top: 60px;
+    top: 75px;
     z-index: 5;
-    padding: 20px;
+    padding: 5px 0;
     cursor: pointer;
     color: #000000; }
   body.uniform .banner .nextArrowBtn {
-    left: -10px; }
+    left: 10px; }
   body.uniform .banner .prevArrowBtn {
-    right: -10px; }
+    right: 10px; }
   body.uniform .introduce-uniform {
     margin-bottom: 40px; }
     body.uniform .introduce-uniform .top-introduce {
@@ -6397,15 +6395,15 @@ body.uniform .modal {
       position: absolute;
       font-size: 1.2em;
       font-weight: 700;
-      top: -14px;
+      top: 1px;
       z-index: 5;
-      padding: 20px;
+      padding: 5px 0;
       cursor: pointer;
       color: #000000; }
     body.uniform .my-client .nextBtn {
-      left: -50px; }
+      left: -20px; }
     body.uniform .my-client .prevBtn {
-      right: -50px; }
+      right: -20px; }
   body.uniform .type-uniform .uniform-type-1 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
@@ -6426,15 +6424,15 @@ body.uniform .modal {
       position: absolute;
       font-size: 2.5em;
       font-weight: 700;
-      top: 120px;
+      top: 125px;
       z-index: 1;
-      padding: 20px;
+      padding: 5px 0;
       cursor: pointer;
       color: #000000; }
     body.uniform .type-uniform .uniform-box .slide-slick-image .nextBtn {
-      left: -10px; }
+      left: 14px; }
     body.uniform .type-uniform .uniform-box .slide-slick-image .prevBtn {
-      right: -10px; }
+      right: 14px; }
     body.uniform .type-uniform .uniform-box .content-uniform {
       padding: 40px 50px; }
       body.uniform .type-uniform .uniform-box .content-uniform .name-uniform {
@@ -7487,9 +7485,9 @@ body.contact .contact-body {
     -ms-flex-flow: column;
         flex-flow: column;
     /* Safari 6.1+ */
-    -ms-flex: 1 0 30%;
+    -ms-flex: 1 0 29%;
     /* IE 10 */
-    flex: 1 0 30%;
+    flex: 1 0 29%;
     position: relative; }
     body.contact .contact-body .left-session #zero {
       height: 0px; }
