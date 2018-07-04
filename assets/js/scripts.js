@@ -48,6 +48,30 @@ $(document).ready(function () {
         ]
     });
 
+    $('.slide-slick-lookbook').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        nextArrow: '<p class="next-button">Sau</p>',
+        prevArrow: '<p class="prev-button">Trước</p>',
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 980, // tablet breakpoint
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480, // mobile breakpoint
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
     // slide in product new page
     $('.slide-slick-product').slick({
         infinite: true,
