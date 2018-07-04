@@ -259,7 +259,7 @@ $.fn.followTo = function (elem) {
                     $this.css({
                         position: 'fixed',
                         top: 0,
-                        width: '351px',
+                        width: '345px',
                     });
                 }
             }else{

@@ -7487,9 +7487,9 @@ body.contact .contact-body {
     -ms-flex-flow: column;
         flex-flow: column;
     /* Safari 6.1+ */
-    -ms-flex: 1 0 30%;
+    -ms-flex: 1 0 29%;
     /* IE 10 */
-    flex: 1 0 30%;
+    flex: 1 0 29%;
     position: relative; }
     body.contact .contact-body .left-session #zero {
       height: 0px; }
