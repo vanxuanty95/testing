@@ -4660,13 +4660,13 @@ body.shopping-bag-page {
           width: 100%;
           border-top: 2px solid #c4c4c4;
           padding-left: 5px;
-          padding-top: 20px;
-          margin-bottom: 200px; }
+          padding-top: 20px; }
           body.shopping-bag-page .container.shopping-bag .top-bag .right-bag .title-right-bag {
             padding-bottom: 40px; }
           body.shopping-bag-page .container.shopping-bag .top-bag .right-bag .delivery-info-detail {
             overflow-y: auto;
-            height: auto; }
+            height: auto;
+            margin-bottom: 200px; }
             body.shopping-bag-page .container.shopping-bag .top-bag .right-bag .delivery-info-detail .same-style {
               display: -ms-flexbox;
               display: flex;
