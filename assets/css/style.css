@@ -4310,11 +4310,12 @@ body.success-notify {
         cursor: pointer;
         background-color: #000000;
         color: #ffffff;
-        padding: 10px 16px;
+        padding: 10px 8px;
         transition-duration: 1s; }
         body.success-notify .container .pop-up .button-close a {
           color: #ffffff;
-          text-decoration: none; }
+          text-decoration: none;
+          padding: 10px; }
         body.success-notify .container .pop-up .button-close:hover {
           background-color: red; }
 
@@ -4648,8 +4649,7 @@ body.shopping-bag-page {
                     background: inherit;
                     border: none; }
               body.shopping-bag-page .container.shopping-bag .top-bag .left-bag .all-products .product-detail .product-price {
-                display: -ms-flexbox;
-                display: flex;
+                display: block;
                 margin-right: 10px; }
                 body.shopping-bag-page .container.shopping-bag .top-bag .left-bag .all-products .product-detail .product-price .price-number {
                   padding-right: 10px; }
@@ -5452,7 +5452,7 @@ div.lookbook-gallery .bottom-right-session {
       cursor: pointer; }
     div.lookbook-gallery .slide-slick-lookbook .slick-dots {
       width: auto;
-      bottom: -40px;
+      bottom: -5px;
       left: 25%; }
     div.lookbook-gallery .slide-slick-lookbook .slick-dots li {
       margin: 0;
@@ -5471,7 +5471,7 @@ div.lookbook-gallery .bottom-right-session {
       content: none; }
     div.lookbook-gallery .slide-slick-lookbook p.prev-button, div.lookbook-gallery .slide-slick-lookbook p.next-button {
       position: absolute;
-      bottom: -85px;
+      bottom: -45px;
       font-weight: 600;
       cursor: pointer;
       z-index: 2; }
@@ -5485,7 +5485,7 @@ div.lookbook-gallery .bottom-right-session {
     position: absolute;
     cursor: pointer;
     font-weight: 600;
-    top: 20px;
+    top: 45px;
     right: 20px; }
   div.lookbook-gallery .top-left-session {
     position: absolute;
@@ -5812,7 +5812,7 @@ div.uniform-gallery .bottom-right-session {
       cursor: pointer; }
     div.uniform-gallery .slide-slick-uniform .slick-dots {
       width: auto;
-      bottom: -40px;
+      bottom: -5px;
       left: 25%; }
     div.uniform-gallery .slide-slick-uniform .slick-dots li {
       margin: 0;
@@ -5831,7 +5831,7 @@ div.uniform-gallery .bottom-right-session {
       content: none; }
     div.uniform-gallery .slide-slick-uniform p.prev-button, div.uniform-gallery .slide-slick-uniform p.next-button {
       position: absolute;
-      bottom: -85px;
+      bottom: -45px;
       font-weight: 600;
       cursor: pointer;
       z-index: 2; }
@@ -5845,7 +5845,7 @@ div.uniform-gallery .bottom-right-session {
     position: absolute;
     cursor: pointer;
     font-weight: 600;
-    top: 20px;
+    top: 45px;
     right: 20px; }
   div.uniform-gallery .top-left-session {
     position: absolute;
@@ -6332,7 +6332,7 @@ body.uniform .modal {
     font-weight: 800;
     top: 75px;
     z-index: 5;
-    padding: 5px 0;
+    padding: 5px 10px;
     cursor: pointer;
     color: #000000; }
   body.uniform .banner .nextArrowBtn {
@@ -6403,7 +6403,7 @@ body.uniform .modal {
       font-weight: 700;
       top: 1px;
       z-index: 5;
-      padding: 5px 0;
+      padding: 5px 10px;
       cursor: pointer;
       color: #000000; }
     body.uniform .my-client .nextBtn {
@@ -6432,7 +6432,7 @@ body.uniform .modal {
       font-weight: 700;
       top: 125px;
       z-index: 1;
-      padding: 5px 0;
+      padding: 5px 10px;
       cursor: pointer;
       color: #000000; }
     body.uniform .type-uniform .uniform-box .slide-slick-image .nextBtn {
