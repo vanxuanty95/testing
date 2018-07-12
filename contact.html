@@ -179,26 +179,66 @@
     <div class="container">
         <div class="row contact-body">
             <div class="left-session">
-                <div id="zero"></div>
-                <form id="one" action="/#.php" class="contact-form">
-                    <input type="text" name="name" placeholder="Họ và tên">
-                    <br>
-                    <input type="tel" name="phone" placeholder="Số điện thoại">
-                    <br>
-                    <input type="email" name="email" placeholder="Email">
-                    <br>
-                    <input type="text" name="title" placeholder="Tiêu đề">
-                    <br>
-                    <input type="text" name="content" placeholder="Nội dung">
-                    <br>
-                    <input class="button-submit" type="submit" value="Liên hệ ngay">
-                </form>
-                <div id="two"></div>
+                <div class="menu-session">
+                    <p class="title-contact">LIÊN HỆ</p>
+                    <p class="faq"><a href="#">Câu hỏi thường gặp</a></p>
+                    <p class="distributor-system"><a href="#">Hệ thống phân phối</a></p>
+                    <p class="member-card"><a href="#">Thẻ khách hàng</a></p>
+                    <p class="career"><a href="#">Tuyển dụng</a></p>
+                </div>
             </div>
             <div class="right-session">
-                <div class="top-body-contact">
-                    <p class="contact-title title-class">Liên hệ</p>
-                    <p class="message">ĐỂ LẠI TIN NHẮN CHO NOVELTY</p>
+                <div class="form-contact">
+                    <p class="title-form">LIÊN HỆ</p>
+                    <p><i>Mọi thắc mắc, ý kiến đóng góp vui lòng liên hệ với Novelty. Ngay khi nhận được thông tin, chúng tôi
+                        sẽ đáp hồi hay gọi cho khách hàng trong thời gian sớm nhất.</i></p>
+                    <form>
+                        <div class="line-input">
+                            <label for="name" class="left-input-line">Họ tên</label>
+                            <div class="right-input-line">
+                                <input type="text" name="name" value="" id="name" class="type1">
+                            </div>
+                        </div>
+                        <div class="line-input">
+                            <label for="email" class="left-input-line">Email</label>
+                            <div class="right-input-line">
+                                <input type="email" name="email" value="" id="email" class="type1">
+                            </div>
+                        </div>
+                        <div class="line-input">
+                            <label for="address" class="left-input-line">Địa chỉ</label>
+                            <div class="right-input-line">
+                                <input type="text" name="address" value="" id="address" class="type1">
+                            </div>
+                        </div>
+                        <div class="line-input">
+                            <label for="title" class="left-input-line">Tiêu đề</label>
+                            <div class="right-input-line">
+                                <input type="text" name="title" value="" id="title" class="type1">
+                            </div>
+                        </div>
+                        <div class="line-input">
+                            <label for="content" class="left-input-line">Nội dung</label>
+                            <div class="right-input-line">
+                                <textarea type="text" name="content" value="" id="content" class="type1 type-area"></textarea>
+                            </div>
+                        </div>
+                        <div class="line-input">
+                            <label for="captcha" class="left-input-line">Mã bảo vệ</label>
+                            <div class="cover-captcha right-input-line">
+                                <p class="captcha-template">ABCDE</p>
+                                <input type="text" name="content" value="" id="captcha" class="type2">
+                            </div>
+                        </div>
+                        <div class="line-input">
+                            <div class="left-input-line"></div>
+                            <div class="cover-button right-input-line">
+                                <input type="submit" name="send" value="GỬI" class="type-button btn-submit">
+                                <input type="submit" name="cancel" value="HỦY" class="type-button">
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
                 <div class="middle-body-contact">
                     <div class="head-quarters-session">

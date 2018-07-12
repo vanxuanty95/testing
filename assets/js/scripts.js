@@ -1,6 +1,10 @@
 'use strict';
 var $ = jQuery;
 $(document).ready(function () {
+    // product detail toggle caution content
+    $('#toggle-caution').click(function(){
+        $('#content-caution').toggle();
+    });
     // remove item in shopping bag
     $('[data-remove]').click(function () {
         var id = $(this).data('remove');
@@ -144,65 +148,6 @@ $(document).ready(function () {
         arrows: false,
         focusOnSelect: true
     });
-
-    if ($('#one') != null) {
-        var isPC = true;
-        var $window = $(window);
-
-        var windowsize = $window.width();
-            if(windowsize <= 1024){
-                isPC = false
-            }else{
-                isPC = true;
-            }
-
-        var scrollFunc = function() {
-            var header = $('header');
-            var headerHeight = header.height();
-            var $one = $('#one');
-            var footerStart = $('body').height() - $('footer').height() - 500;
-        
-            $window.scroll(function(){
-                if (isPC) {
-                    if ($('.menu-show').is(':visible')) {
-                        headerHeight = header.height();
-                    } else {
-                        headerHeight = header.height();
-                    }
-                    if ($window.scrollTop() > headerHeight && $window.scrollTop() < footerStart) {
-                        $one.css({
-                            position: 'fixed',
-                            top: 0,
-                            width: '345px',
-                            bottom: 'auto'
-                        });
-                    } else if ($window.scrollTop() <= headerHeight) {
-                        $one.css({
-                            position: 'relative',
-                            top: 'auto',
-                            width: 'auto'
-                        });
-                    } else if ($window.scrollTop() >= footerStart) {
-                        $one.css({
-                            position: 'absolute',
-                            width: '100%',
-                            bottom: '0',
-                            top: 'auto'
-                        });
-                    }
-                }
-            });
-        }
-        scrollFunc();
-        $window.resize(function () {
-            var windowsize = $window.width();
-            if(windowsize <= 1024){
-                isPC = false
-            }else{
-                isPC = true;
-            }
-        });
-    }
 });
 
 $('.menu-button').on('click', function () {
@@ -281,59 +226,6 @@ $(window).click(function () {
 });
 
 var windw = this;
-
-$.fn.followTo = function (elem) {
-    var isPC = true;
-    if($(windw).width()<=1024){
-        isPC=false;
-    }else{
-        true;
-    }
-    var bumperPos = $(elem).offset().top;
-    var $this = this,
-        $window = $(windw),
-        startingPos = $this.offset().top,
-        defaultPosType = $this.css('position'),
-        thisHeight = $this.outerHeight(),
-        setPosition = function () {
-            if (isPC) {
-                if ($window.scrollTop() > (bumperPos - thisHeight)) {
-                    $this.css({
-                        position: 'absolute',
-                        top: (bumperPos - thisHeight - startingPos),
-                        width: '100%'
-                    });
-                } else if ($window.scrollTop() < (startingPos)) {
-                    $this.css({
-                        position: defaultPosType,
-                        top: startingPos,
-                        width: '100%'
-                    });
-                } else {
-                    $this.css({
-                        position: 'fixed',
-                        top: 0,
-                        width: '345px',
-                    });
-                }
-            }else{
-                $this.attr( "style", "" );
-            }
-        };
-    $window.resize(function () {
-        var windowsize = $window.width();
-        if(windowsize <= 1024){
-            isPC = false
-        }else{
-            isPC = true;
-        }
-        bumperPos = $(elem).offset().top;
-        setPosition();
-    });
-    $window.scroll(setPosition);
-    setPosition();
-    setPosition();
-};
 
 $(".open_modal_lookbook").on("click", function(){
     function show_popup(){
