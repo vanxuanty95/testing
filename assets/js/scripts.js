@@ -173,6 +173,51 @@ $('.menu-button').on('click', function () {
         }
     }
 });
+// faq-page
+$('#question1').click(function () {
+    $('#answer1').toggle(200);
+    var cs = $('#question1 span').attr("class");
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-bottom') {
+        $('#question1 span').removeClass('glyphicon-triangle-bottom').addClass('glyphicon-triangle-top');
+    }
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-top') {
+        $('#question1 span').removeClass('glyphicon-triangle-top').addClass('glyphicon-triangle-bottom');
+    }
+});
+
+$('#question2').click(function () {
+    $('#answer2').toggle(200);
+    var cs = $('#question2 span').attr("class");
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-bottom') {
+        $('#question2 span').removeClass('glyphicon-triangle-bottom').addClass('glyphicon-triangle-top');
+    }
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-top') {
+        $('#question2 span').removeClass('glyphicon-triangle-top').addClass('glyphicon-triangle-bottom');
+    }
+});
+
+$('#question3').click(function () {
+    $('#answer3').toggle(200);
+    var cs = $('#question3 span').attr("class");
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-bottom') {
+        $('#question3 span').removeClass('glyphicon-triangle-bottom').addClass('glyphicon-triangle-top');
+    }
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-top') {
+        $('#question3 span').removeClass('glyphicon-triangle-top').addClass('glyphicon-triangle-bottom');
+    }
+});
+
+$('#question4').click(function () {
+    $('#answer4').toggle(200);
+    var cs = $('#question4 span').attr("class");
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-bottom') {
+        $('#question4 span').removeClass('glyphicon-triangle-bottom').addClass('glyphicon-triangle-top');
+    }
+    if (cs == 'nav-toggle-icon glyphicon glyphicon-triangle-top') {
+        $('#question4 span').removeClass('glyphicon-triangle-top').addClass('glyphicon-triangle-bottom');
+    }
+});
+
 
 $('ul.nav-left-ml').toggle();
 $('label.nav-toggle span').click(function () {
