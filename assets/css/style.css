@@ -3709,7 +3709,8 @@ body.product-detail .top-product-detail {
       color: #ffffff;
       transition: all 0.5s ease-in;
       width: 400px;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-bottom: 20px; }
     body.product-detail .top-product-detail .info-product .add-to-cart:hover {
       background-color: #ffffff;
       color: #0f1b35; }
