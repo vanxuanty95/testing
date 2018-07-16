@@ -4,6 +4,8 @@ $(document).ready(function () {
     // product detail toggle caution content
     $('#toggle-caution').click(function(){
         $('#content-caution').toggle();
+        $('.caution-icon-minus').toggle();
+        $('.caution-icon-plus').toggle();
     });
     // remove item in shopping bag
     $('[data-remove]').click(function () {
