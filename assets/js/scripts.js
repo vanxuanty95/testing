@@ -1,5 +1,6 @@
 'use strict';
 var $ = jQuery;
+
 $(document).ready(function () {
     // product detail toggle caution content
     $('#toggle-caution').click(function(){
@@ -148,33 +149,53 @@ $(document).ready(function () {
         asNavFor: '.slider-for-image',
         dots: true,
         arrows: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 480, // mobile breakpoint
+                settings: {
+                }
+            }
+        ]
     });
 });
 
-$('.menu-button').on('click', function () {
-    var css = $(this).children().children('.menu-toggle-icon');
+// handle menu button
+
+$('.home-button').on('click', function () {
+    var css = $(this).children('.menu-toggle-icon');
     var cs = css.attr("class");
-    if ($('.menu-show').is(':visible')) {
-        $('.menu-show').animate({
-            'height': 'hide'
-        }, 300, function () {
-            $('.menu-show').fadeOut(300);
-        });
-        if (cs == 'menu-toggle-icon glyphicon glyphicon-remove') {
-            $(css).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
-        }
-    } else {
-        $('.menu-show').animate({
-            'height': 'show'
-        }, 300, function () {
-            $('.menu-show').fadeIn(300);
-        });
-        if (cs == 'menu-toggle-icon glyphicon glyphicon-menu-hamburger') {
-            $(css).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
-        }
+    if (cs == 'menu-toggle-icon glyphicon glyphicon-remove') {
+        $(css).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+    }
+    if (cs == 'menu-toggle-icon glyphicon glyphicon-menu-hamburger') {
+        $(css).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+    }
+    $('.sub-hidden-menu').toggle(300);
+});
+
+$('#btn-toggle-men').click(function () {
+    $('#content-men').toggle(200);
+    var cs = $('#btn-toggle-men .icon-item i').attr("class");
+    if (cs == 'fa fa-caret-down') {
+        $('#btn-toggle-men .icon-item i').removeClass('fa-caret-down').addClass('fa-caret-up');
+    }
+    if (cs == 'fa fa-caret-up') {
+        $('#btn-toggle-men .icon-item i').removeClass('fa-caret-up').addClass('fa-caret-down');
     }
 });
+
+$('#btn-toggle-women').click(function () {
+    $('#content-women').toggle(200);
+    var cs = $('#btn-toggle-women .icon-item i').attr("class");
+    if (cs == 'fa fa-caret-down') {
+        $('#btn-toggle-women .icon-item i').removeClass('fa-caret-down').addClass('fa-caret-up');
+    }
+    if (cs == 'fa fa-caret-up') {
+        $('#btn-toggle-women .icon-item i').removeClass('fa-caret-up').addClass('fa-caret-down');
+    }
+});
+
 // faq-page
 $('#question1').click(function () {
     $('#answer1').toggle(200);
@@ -347,3 +368,25 @@ $(".open_modal_lookbook").on("click", function(){
         }, 200 );
     }
 })
+
+function initialize() {
+    var locationLatLng = {lat: 21.0081751, lng: 105.7978339};
+    var mapOptions = {
+        zoom: 15,
+        center: locationLatLng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var mapCanvas = document.createElement("div");
+    mapCanvas.id = "canvas";
+    mapCanvas.style.width = "100%";
+    mapCanvas.style.height = "750px"
+    $('#image-show-ggapi').append(mapCanvas);
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({
+        position: locationLatLng,
+        title: "Tòa nhà Charmvit Tower",
+    });
+    marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
