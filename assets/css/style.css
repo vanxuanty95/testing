@@ -4378,17 +4378,9 @@ body.product-detail .slide-slick-product-detail {
 
 body.product-detail .modal-body {
   overflow-y: auto;
-  height: 80vh; }
-  body.product-detail .modal-body .info-company p {
-    font-weight: bold; }
-  body.product-detail .modal-body .title-product {
-    font-weight: 700;
-    margin-left: 50px; }
-  body.product-detail .modal-body .title-body {
-    font-weight: 700;
-    font-size: 1.2em; }
-  body.product-detail .modal-body .title-name {
-    font-weight: 700; }
+  height: 85vh; }
+  body.product-detail .modal-body .content-size-chart img {
+    width: 100%; }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   body.product-detail .top-product-detail {
