@@ -8119,11 +8119,12 @@ body.contact .contact-body {
   display: flex;
   margin-bottom: 80px; }
   body.contact .contact-body .left-session {
-    width: 30%; }
+    width: 30%;
+    position: relative; }
     body.contact .contact-body .left-session .menu-session {
       position: fixed;
       left: 100px;
-      top: 130px;
+      top: 150px;
       font-weight: 500; }
       body.contact .contact-body .left-session .menu-session a {
         text-decoration: none; }
@@ -8223,10 +8224,10 @@ body.contact .contact-body {
     body.contact .contact-body .left-session {
       width: 100%; }
       body.contact .contact-body .left-session .menu-session {
-        position: relative;
-        padding: 30px 0 0 0;
-        top: 0;
-        left: 0; }
+        position: relative !important;
+        padding: 30px 0 0 0 !important;
+        top: 0 !important;
+        left: 0 !important; }
     body.contact .contact-body .right-session {
       width: 100%; }
       body.contact .contact-body .right-session .form-contact {
@@ -8316,8 +8317,8 @@ body.contact .contact-body {
         flex-flow: row wrap; }
     body.contact .contact-body .left-session .menu-session {
       position: fixed;
-      left: 30px;
-      top: 130px;
+      left: 30px !important;
+      top: 150px;
       font-weight: 500; }
       body.contact .contact-body .left-session .menu-session a {
         text-decoration: none; }
@@ -8413,8 +8414,8 @@ body.contact .contact-body {
       width: 30%; }
       body.contact .contact-body .left-session .menu-session {
         position: fixed;
-        left: 80px;
-        top: 130px;
+        left: 80px !important;
+        top: 150px;
         font-weight: 500; }
         body.contact .contact-body .left-session .menu-session a {
           text-decoration: none; }
@@ -8579,11 +8580,12 @@ body.member-card-page .member-card-page-body {
   display: flex;
   margin-bottom: 80px; }
   body.member-card-page .member-card-page-body .left-session {
-    width: 30%; }
+    width: 30%;
+    position: relative; }
     body.member-card-page .member-card-page-body .left-session .menu-session {
       position: fixed;
       left: 100px;
-      top: 130px;
+      top: 150px;
       font-weight: 500; }
       body.member-card-page .member-card-page-body .left-session .menu-session a {
         text-decoration: none; }
@@ -8652,10 +8654,10 @@ body.member-card-page .member-card-page-body {
     body.member-card-page .member-card-page-body .left-session {
       width: 100%; }
       body.member-card-page .member-card-page-body .left-session .menu-session {
-        position: relative;
-        left: 0;
-        top: 0;
-        font-weight: 500; }
+        position: relative !important;
+        padding: 30px 0 0 0 !important;
+        top: 0 !important;
+        left: 0 !important; }
     body.member-card-page .member-card-page-body .right-session {
       width: 100%; }
       body.member-card-page .member-card-page-body .right-session .middle-body-member-card-page {
@@ -8702,31 +8704,29 @@ body.member-card-page .member-card-page-body {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 80px; }
-    body.member-card-page .member-card-page-body .left-session {
-      width: 30%; }
-      body.member-card-page .member-card-page-body .left-session .menu-session {
-        position: fixed;
-        left: 30px;
-        top: 130px;
-        font-weight: 500; }
-        body.member-card-page .member-card-page-body .left-session .menu-session a {
-          text-decoration: none; }
-        body.member-card-page .member-card-page-body .left-session .menu-session p {
-          padding-left: 20px;
-          margin: 0; }
-        body.member-card-page .member-card-page-body .left-session .menu-session .title-contact {
-          font-size: 1.5em;
-          margin-bottom: 20px; }
-        body.member-card-page .member-card-page-body .left-session .menu-session .faq-page, body.member-card-page .member-card-page-body .left-session .menu-session .member-card-page, body.member-card-page .member-card-page-body .left-session .menu-session .policy-page {
-          border-bottom: 1px solid #c4c4c4; }
-        body.member-card-page .member-card-page-body .left-session .menu-session .faq-page, body.member-card-page .member-card-page-body .left-session .menu-session .member-card-page, body.member-card-page .member-card-page-body .left-session .menu-session .policy-page, body.member-card-page .member-card-page-body .left-session .menu-session .payment-guide-page {
-          padding-bottom: 7px;
-          padding-top: 7px;
-          min-width: 200px;
-          cursor: pointer;
-          transition: all 0.6s ease-in; }
-          body.member-card-page .member-card-page-body .left-session .menu-session .faq-page:hover, body.member-card-page .member-card-page-body .left-session .menu-session .member-card-page:hover, body.member-card-page .member-card-page-body .left-session .menu-session .policy-page:hover, body.member-card-page .member-card-page-body .left-session .menu-session .payment-guide-page:hover {
-            background-color: #f2f2f2; }
+    body.member-card-page .member-card-page-body .left-session .menu-session {
+      position: fixed;
+      left: 30px !important;
+      top: 150px;
+      font-weight: 500; }
+      body.member-card-page .member-card-page-body .left-session .menu-session a {
+        text-decoration: none; }
+      body.member-card-page .member-card-page-body .left-session .menu-session p {
+        padding-left: 20px;
+        margin: 0; }
+      body.member-card-page .member-card-page-body .left-session .menu-session .title-contact {
+        font-size: 1.5em;
+        margin-bottom: 20px; }
+      body.member-card-page .member-card-page-body .left-session .menu-session .faq-page, body.member-card-page .member-card-page-body .left-session .menu-session .member-card-page, body.member-card-page .member-card-page-body .left-session .menu-session .policy-page {
+        border-bottom: 1px solid #c4c4c4; }
+      body.member-card-page .member-card-page-body .left-session .menu-session .faq-page, body.member-card-page .member-card-page-body .left-session .menu-session .member-card-page, body.member-card-page .member-card-page-body .left-session .menu-session .policy-page, body.member-card-page .member-card-page-body .left-session .menu-session .payment-guide-page {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        min-width: 200px;
+        cursor: pointer;
+        transition: all 0.6s ease-in; }
+        body.member-card-page .member-card-page-body .left-session .menu-session .faq-page:hover, body.member-card-page .member-card-page-body .left-session .menu-session .member-card-page:hover, body.member-card-page .member-card-page-body .left-session .menu-session .policy-page:hover, body.member-card-page .member-card-page-body .left-session .menu-session .payment-guide-page:hover {
+          background-color: #f2f2f2; }
     body.member-card-page .member-card-page-body .right-session {
       width: 70%; }
       body.member-card-page .member-card-page-body .right-session .middle-body-member-card-page {
@@ -8777,8 +8777,8 @@ body.member-card-page .member-card-page-body {
       width: 30%; }
       body.member-card-page .member-card-page-body .left-session .menu-session {
         position: fixed;
-        left: 80px;
-        top: 130px;
+        left: 80px !important;
+        top: 150px;
         font-weight: 500; }
         body.member-card-page .member-card-page-body .left-session .menu-session a {
           text-decoration: none; }
@@ -8844,11 +8844,12 @@ body.policy-page .policy-page-body {
   display: flex;
   margin-bottom: 80px; }
   body.policy-page .policy-page-body .left-session {
-    width: 30%; }
+    width: 30%;
+    position: relative; }
     body.policy-page .policy-page-body .left-session .menu-session {
       position: fixed;
       left: 100px;
-      top: 130px;
+      top: 150px;
       font-weight: 500; }
       body.policy-page .policy-page-body .left-session .menu-session a {
         text-decoration: none; }
@@ -8906,10 +8907,10 @@ body.policy-page .policy-page-body {
     body.policy-page .policy-page-body .left-session {
       width: 100%; }
       body.policy-page .policy-page-body .left-session .menu-session {
-        position: relative;
-        left: 0;
-        top: 0;
-        font-weight: 500; }
+        position: relative !important;
+        padding: 30px 0 0 0 !important;
+        top: 0 !important;
+        left: 0 !important; }
     body.policy-page .policy-page-body .right-session {
       width: 100%; }
       body.policy-page .policy-page-body .right-session .middle-body-policy-page {
@@ -8942,31 +8943,29 @@ body.policy-page .policy-page-body {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 80px; }
-    body.policy-page .policy-page-body .left-session {
-      width: 30%; }
-      body.policy-page .policy-page-body .left-session .menu-session {
-        position: fixed;
-        left: 30px;
-        top: 130px;
-        font-weight: 500; }
-        body.policy-page .policy-page-body .left-session .menu-session a {
-          text-decoration: none; }
-        body.policy-page .policy-page-body .left-session .menu-session p {
-          padding-left: 20px;
-          margin: 0; }
-        body.policy-page .policy-page-body .left-session .menu-session .title-contact {
-          font-size: 1.5em;
-          margin-bottom: 20px; }
-        body.policy-page .policy-page-body .left-session .menu-session .faq-page, body.policy-page .policy-page-body .left-session .menu-session .member-card-page, body.policy-page .policy-page-body .left-session .menu-session .policy-page {
-          border-bottom: 1px solid #c4c4c4; }
-        body.policy-page .policy-page-body .left-session .menu-session .faq-page, body.policy-page .policy-page-body .left-session .menu-session .member-card-page, body.policy-page .policy-page-body .left-session .menu-session .policy-page, body.policy-page .policy-page-body .left-session .menu-session .payment-guide-page {
-          padding-bottom: 7px;
-          padding-top: 7px;
-          min-width: 200px;
-          cursor: pointer;
-          transition: all 0.6s ease-in; }
-          body.policy-page .policy-page-body .left-session .menu-session .faq-page:hover, body.policy-page .policy-page-body .left-session .menu-session .member-card-page:hover, body.policy-page .policy-page-body .left-session .menu-session .policy-page:hover, body.policy-page .policy-page-body .left-session .menu-session .payment-guide-page:hover {
-            background-color: #f2f2f2; }
+    body.policy-page .policy-page-body .left-session .menu-session {
+      position: fixed;
+      left: 30px !important;
+      top: 150px;
+      font-weight: 500; }
+      body.policy-page .policy-page-body .left-session .menu-session a {
+        text-decoration: none; }
+      body.policy-page .policy-page-body .left-session .menu-session p {
+        padding-left: 20px;
+        margin: 0; }
+      body.policy-page .policy-page-body .left-session .menu-session .title-contact {
+        font-size: 1.5em;
+        margin-bottom: 20px; }
+      body.policy-page .policy-page-body .left-session .menu-session .faq-page, body.policy-page .policy-page-body .left-session .menu-session .member-card-page, body.policy-page .policy-page-body .left-session .menu-session .policy-page {
+        border-bottom: 1px solid #c4c4c4; }
+      body.policy-page .policy-page-body .left-session .menu-session .faq-page, body.policy-page .policy-page-body .left-session .menu-session .member-card-page, body.policy-page .policy-page-body .left-session .menu-session .policy-page, body.policy-page .policy-page-body .left-session .menu-session .payment-guide-page {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        min-width: 200px;
+        cursor: pointer;
+        transition: all 0.6s ease-in; }
+        body.policy-page .policy-page-body .left-session .menu-session .faq-page:hover, body.policy-page .policy-page-body .left-session .menu-session .member-card-page:hover, body.policy-page .policy-page-body .left-session .menu-session .policy-page:hover, body.policy-page .policy-page-body .left-session .menu-session .payment-guide-page:hover {
+          background-color: #f2f2f2; }
     body.policy-page .policy-page-body .right-session {
       width: 70%; }
       body.policy-page .policy-page-body .right-session .middle-body-policy-page {
@@ -9003,8 +9002,8 @@ body.policy-page .policy-page-body {
       width: 30%; }
       body.policy-page .policy-page-body .left-session .menu-session {
         position: fixed;
-        left: 80px;
-        top: 130px;
+        left: 80px !important;
+        top: 150px;
         font-weight: 500; }
         body.policy-page .policy-page-body .left-session .menu-session a {
           text-decoration: none; }
@@ -9056,11 +9055,12 @@ body.payment-guide .payment-guide-body {
   display: flex;
   margin-bottom: 80px; }
   body.payment-guide .payment-guide-body .left-session {
-    width: 30%; }
+    width: 30%;
+    position: relative; }
     body.payment-guide .payment-guide-body .left-session .menu-session {
       position: fixed;
       left: 100px;
-      top: 130px;
+      top: 150px;
       font-weight: 500; }
       body.payment-guide .payment-guide-body .left-session .menu-session a {
         text-decoration: none; }
@@ -9115,10 +9115,10 @@ body.payment-guide .payment-guide-body {
     body.payment-guide .payment-guide-body .left-session {
       width: 100%; }
       body.payment-guide .payment-guide-body .left-session .menu-session {
-        position: relative;
-        padding: 30px 0 0 0;
-        top: 0;
-        left: 0; }
+        position: relative !important;
+        padding: 30px 0 0 0 !important;
+        top: 0 !important;
+        left: 0 !important; }
     body.payment-guide .payment-guide-body .right-session {
       width: 100%; }
       body.payment-guide .payment-guide-body .right-session .middle-body-payment-guide {
@@ -9129,31 +9129,29 @@ body.payment-guide .payment-guide-body {
   body.payment-guide .payment-guide-body {
     display: -ms-flexbox;
     display: flex; }
-    body.payment-guide .payment-guide-body .left-session {
-      width: 30%; }
-      body.payment-guide .payment-guide-body .left-session .menu-session {
-        position: fixed;
-        left: 30px;
-        top: 130px;
-        font-weight: 500; }
-        body.payment-guide .payment-guide-body .left-session .menu-session a {
-          text-decoration: none; }
-        body.payment-guide .payment-guide-body .left-session .menu-session p {
-          padding-left: 20px;
-          margin: 0; }
-        body.payment-guide .payment-guide-body .left-session .menu-session .title-contact {
-          font-size: 1.5em;
-          margin-bottom: 20px; }
-        body.payment-guide .payment-guide-body .left-session .menu-session .faq-page, body.payment-guide .payment-guide-body .left-session .menu-session .member-card-page, body.payment-guide .payment-guide-body .left-session .menu-session .policy-page {
-          border-bottom: 1px solid #c4c4c4; }
-        body.payment-guide .payment-guide-body .left-session .menu-session .faq-page, body.payment-guide .payment-guide-body .left-session .menu-session .member-card-page, body.payment-guide .payment-guide-body .left-session .menu-session .policy-page, body.payment-guide .payment-guide-body .left-session .menu-session .payment-guide-page {
-          padding-bottom: 7px;
-          padding-top: 7px;
-          min-width: 200px;
-          cursor: pointer;
-          transition: all 0.6s ease-in; }
-          body.payment-guide .payment-guide-body .left-session .menu-session .faq-page:hover, body.payment-guide .payment-guide-body .left-session .menu-session .member-card-page:hover, body.payment-guide .payment-guide-body .left-session .menu-session .policy-page:hover, body.payment-guide .payment-guide-body .left-session .menu-session .payment-guide-page:hover {
-            background-color: #f2f2f2; }
+    body.payment-guide .payment-guide-body .left-session .menu-session {
+      position: fixed;
+      left: 30px !important;
+      top: 150px;
+      font-weight: 500; }
+      body.payment-guide .payment-guide-body .left-session .menu-session a {
+        text-decoration: none; }
+      body.payment-guide .payment-guide-body .left-session .menu-session p {
+        padding-left: 20px;
+        margin: 0; }
+      body.payment-guide .payment-guide-body .left-session .menu-session .title-contact {
+        font-size: 1.5em;
+        margin-bottom: 20px; }
+      body.payment-guide .payment-guide-body .left-session .menu-session .faq-page, body.payment-guide .payment-guide-body .left-session .menu-session .member-card-page, body.payment-guide .payment-guide-body .left-session .menu-session .policy-page {
+        border-bottom: 1px solid #c4c4c4; }
+      body.payment-guide .payment-guide-body .left-session .menu-session .faq-page, body.payment-guide .payment-guide-body .left-session .menu-session .member-card-page, body.payment-guide .payment-guide-body .left-session .menu-session .policy-page, body.payment-guide .payment-guide-body .left-session .menu-session .payment-guide-page {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        min-width: 200px;
+        cursor: pointer;
+        transition: all 0.6s ease-in; }
+        body.payment-guide .payment-guide-body .left-session .menu-session .faq-page:hover, body.payment-guide .payment-guide-body .left-session .menu-session .member-card-page:hover, body.payment-guide .payment-guide-body .left-session .menu-session .policy-page:hover, body.payment-guide .payment-guide-body .left-session .menu-session .payment-guide-page:hover {
+          background-color: #f2f2f2; }
     body.payment-guide .payment-guide-body .right-session {
       width: 70%; }
       body.payment-guide .payment-guide-body .right-session .middle-body-payment-guide {
@@ -9168,8 +9166,8 @@ body.payment-guide .payment-guide-body {
       width: 30%; }
       body.payment-guide .payment-guide-body .left-session .menu-session {
         position: fixed;
-        left: 80px;
-        top: 130px;
+        left: 80px !important;
+        top: 150px;
         font-weight: 500; }
         body.payment-guide .payment-guide-body .left-session .menu-session a {
           text-decoration: none; }
@@ -9200,11 +9198,12 @@ body.faq-page .faq-page-body {
   display: flex;
   margin-bottom: 80px; }
   body.faq-page .faq-page-body .left-session {
-    width: 30%; }
+    width: 30%;
+    position: relative; }
     body.faq-page .faq-page-body .left-session .menu-session {
       position: fixed;
       left: 100px;
-      top: 130px;
+      top: 150px;
       font-weight: 500; }
       body.faq-page .faq-page-body .left-session .menu-session a {
         text-decoration: none; }
@@ -9260,10 +9259,10 @@ body.faq-page .faq-page-body {
     body.faq-page .faq-page-body .left-session {
       width: 100%; }
       body.faq-page .faq-page-body .left-session .menu-session {
-        position: relative;
-        left: 0;
-        top: 0;
-        font-weight: 500; }
+        position: relative !important;
+        padding: 30px 0 0 0 !important;
+        top: 0 !important;
+        left: 0 !important; }
     body.faq-page .faq-page-body .right-session {
       width: 100%; }
       body.faq-page .faq-page-body .right-session .middle-body-faq-page {
@@ -9293,31 +9292,29 @@ body.faq-page .faq-page-body {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 80px; }
-    body.faq-page .faq-page-body .left-session {
-      width: 30%; }
-      body.faq-page .faq-page-body .left-session .menu-session {
-        position: fixed;
-        left: 30px;
-        top: 130px;
-        font-weight: 500; }
-        body.faq-page .faq-page-body .left-session .menu-session a {
-          text-decoration: none; }
-        body.faq-page .faq-page-body .left-session .menu-session p {
-          padding-left: 20px;
-          margin: 0; }
-        body.faq-page .faq-page-body .left-session .menu-session .title-contact {
-          font-size: 1.5em;
-          margin-bottom: 20px; }
-        body.faq-page .faq-page-body .left-session .menu-session .faq-page, body.faq-page .faq-page-body .left-session .menu-session .member-card-page, body.faq-page .faq-page-body .left-session .menu-session .policy-page {
-          border-bottom: 1px solid #c4c4c4; }
-        body.faq-page .faq-page-body .left-session .menu-session .faq-page, body.faq-page .faq-page-body .left-session .menu-session .member-card-page, body.faq-page .faq-page-body .left-session .menu-session .policy-page, body.faq-page .faq-page-body .left-session .menu-session .payment-guide-page {
-          padding-bottom: 7px;
-          padding-top: 7px;
-          min-width: 200px;
-          cursor: pointer;
-          transition: all 0.6s ease-in; }
-          body.faq-page .faq-page-body .left-session .menu-session .faq-page:hover, body.faq-page .faq-page-body .left-session .menu-session .member-card-page:hover, body.faq-page .faq-page-body .left-session .menu-session .policy-page:hover, body.faq-page .faq-page-body .left-session .menu-session .payment-guide-page:hover {
-            background-color: #f2f2f2; }
+    body.faq-page .faq-page-body .left-session .menu-session {
+      position: fixed;
+      left: 30px !important;
+      top: 150px;
+      font-weight: 500; }
+      body.faq-page .faq-page-body .left-session .menu-session a {
+        text-decoration: none; }
+      body.faq-page .faq-page-body .left-session .menu-session p {
+        padding-left: 20px;
+        margin: 0; }
+      body.faq-page .faq-page-body .left-session .menu-session .title-contact {
+        font-size: 1.5em;
+        margin-bottom: 20px; }
+      body.faq-page .faq-page-body .left-session .menu-session .faq-page, body.faq-page .faq-page-body .left-session .menu-session .member-card-page, body.faq-page .faq-page-body .left-session .menu-session .policy-page {
+        border-bottom: 1px solid #c4c4c4; }
+      body.faq-page .faq-page-body .left-session .menu-session .faq-page, body.faq-page .faq-page-body .left-session .menu-session .member-card-page, body.faq-page .faq-page-body .left-session .menu-session .policy-page, body.faq-page .faq-page-body .left-session .menu-session .payment-guide-page {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        min-width: 200px;
+        cursor: pointer;
+        transition: all 0.6s ease-in; }
+        body.faq-page .faq-page-body .left-session .menu-session .faq-page:hover, body.faq-page .faq-page-body .left-session .menu-session .member-card-page:hover, body.faq-page .faq-page-body .left-session .menu-session .policy-page:hover, body.faq-page .faq-page-body .left-session .menu-session .payment-guide-page:hover {
+          background-color: #f2f2f2; }
     body.faq-page .faq-page-body .right-session {
       width: 70%; }
       body.faq-page .faq-page-body .right-session .middle-body-faq-page {
@@ -9350,8 +9347,8 @@ body.faq-page .faq-page-body {
       width: 30%; }
       body.faq-page .faq-page-body .left-session .menu-session {
         position: fixed;
-        left: 80px;
-        top: 130px;
+        left: 80px !important;
+        top: 150px;
         font-weight: 500; }
         body.faq-page .faq-page-body .left-session .menu-session a {
           text-decoration: none; }

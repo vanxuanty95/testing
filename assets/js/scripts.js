@@ -369,6 +369,52 @@ $(".open_modal_lookbook").on("click", function(){
     }
 })
 
+if ($('#menu-contact') != null) {
+    var isPC = true;
+    var $window = $(window);
+
+    var windowsize = $window.width();
+    if(windowsize < 768){
+        isPC = false
+    }else{
+        isPC = true;
+    }
+
+    var scrollFunc = function() {
+        var header = $('header');
+        var $menuContact = $('#menu-contact');
+        var footerStart = $('body').height() - $('footer').height() - 500;
+
+        $window.scroll(function(){
+            if (isPC) {
+                if ($window.scrollTop() >= footerStart) {
+                    $menuContact.css({
+                        position: 'absolute',
+                        bottom: '-15px',
+                        top: 'auto',
+                        left: '10px'
+                    });
+                } else {
+                    $menuContact.css({
+                        position: 'fixed',
+                        top: '150px',
+                        left: '100px'
+                    });
+                }
+            }
+        });
+    }
+    scrollFunc();
+    $window.resize(function () {
+        var windowsize = $window.width();
+        if(windowsize < 768){
+            isPC = false
+        }else{
+            isPC = true;
+        }
+    });
+}
+
 function initialize() {
     var locationLatLng = {lat: 21.0081751, lng: 105.7978339};
     var mapOptions = {
