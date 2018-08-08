@@ -2,6 +2,7 @@
 var $ = jQuery;
 
 $(document).ready(function () {
+
     // product detail toggle caution content
     $('#toggle-caution').click(function(){
         $('#content-caution').toggle();
