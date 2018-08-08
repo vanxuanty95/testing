@@ -3906,6 +3906,9 @@ body.product-new .container .product-box {
       display: flex;
       transition: all 0.5s ease-in-out; }
 
+body.product-new .container:hover {
+  opacity: 1; }
+
 body.product-new .color-style {
   width: 20px;
   height: 20px;
@@ -3985,7 +3988,7 @@ body.product-new .bottom-spacing {
       padding: 0 20px;
       cursor: pointer;
       border-right: 1px solid #ffffff;
-      height: 30px;
+      height: 40px;
       font-size: 0.9em;
       display: -ms-flexbox;
       display: flex;
@@ -4005,14 +4008,14 @@ body.product-new .bottom-spacing {
       display: none;
       position: absolute;
       left: 0;
-      top: 30px;
+      top: 40px;
       z-index: 2;
       width: 100%;
       transition: all 0.5s ease-in-out; }
       body.product-new .container .menu ul.level-1 li {
         background-color: #eeeeee;
         width: 100%;
-        padding: 6px 16px;
+        padding: 9px 16px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
         position: relative; }
@@ -4050,11 +4053,11 @@ body.product-new .bottom-spacing {
           body.product-new .container .menu ul.level-1 li ul.level-2 li {
             background-color: #eeeeee;
             width: 100%;
-            padding: 6px 50px;
+            padding: 9px 15px 9px 40px;
             cursor: pointer;
             transition-duration: 0.7s; }
             body.product-new .container .menu ul.level-1 li ul.level-2 li .sub-title {
-              padding: 6px 20px; }
+              padding: 9px 15px 9px 20px; }
             body.product-new .container .menu ul.level-1 li ul.level-2 li:hover {
               background-color: #ffffff; }
               body.product-new .container .menu ul.level-1 li ul.level-2 li:hover .sub-title {
