@@ -415,6 +415,57 @@ if ($('#menu-contact') != null) {
     });
 }
 
+if ($('#menu-product-filter') != null) {
+    var isMobile = true;
+    var $window = $(window);
+
+    var windowsize = $window.width();
+    if(windowsize < 600){
+        isMobile = true
+    }else{
+        isMobile = false;
+    }
+
+    var scrollFunc = function() {
+        var header = $('header');
+        var banner = $('#banner-product-new');
+        var $menuProductFilter = $('#menu-product-filter');
+        var topStart = header.height() + banner.height() - 20;
+        var bottomStart = $('body').height() - $('footer').height() - 470;
+
+        $window.scroll(function(){
+            if (isMobile) {
+                if ($window.scrollTop() >= topStart && $window.scrollTop() < bottomStart) {
+                    $menuProductFilter.css({
+                        position: 'fixed',
+                        top: '0',
+                        zIndex: 99
+                    });
+                } else if ($window.scrollTop() >= bottomStart) {
+                    $menuProductFilter.css({
+                        position: 'relative',
+                        top: 'auto'
+                    });
+                } else{
+                    $menuProductFilter.css({
+                    position: 'relative',
+                    top: 'auto'
+                });
+            }
+            }
+        });
+    }
+    scrollFunc();
+    $window.resize(function () {
+        var windowsize = $window.width();
+        if(windowsize < 600){
+            isMobile = true
+        }else{
+            isMobile = false;
+        }
+    });
+}
+
 function initialize() {
     var locationLatLng = {lat: 21.0081751, lng: 105.7978339};
     var mapOptions = {

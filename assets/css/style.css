@@ -3465,7 +3465,9 @@ body.about .row-8 {
   body.about .row-6 .row6-column-2 {
     margin-top: -95px; }
   body.about .row-8 .slide-slick-lookbook .slick-dots li button {
-    width: 80px; } }
+    width: 80px; }
+  body.about .row-6 .row6-column-3 .bottom-row {
+    right: -30px; } }
 
 @media (max-width: 415px) {
   body.about .row-3 .content {
@@ -3516,7 +3518,9 @@ body.about .row-8 {
     -ms-transform: translateY(0%);
     transform: translateY(0%);
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    bottom: -10px;
+    right: 10px; }
     body.about .row-6 .row6-column-3 .bottom-row p {
       margin-right: 5px; }
   body.about .row-6 .row6-column-2 {
@@ -3821,6 +3825,9 @@ body.product-new .container .menu {
   body.product-new .container .menu #price-sort:hover #price-sort-menu {
     display: block; }
 
+body.product-new .container .row-product:hover {
+  opacity: 1; }
+
 body.product-new .container .product-box {
   position: relative;
   border: 1px solid #c4c4c4;
@@ -4002,6 +4009,110 @@ body.product-new .bottom-spacing {
       left: 25px; }
     body.product-new .container .banner .prevArrowBtn {
       right: 25px; }
+  body.product-new .container .menu {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px; }
+    body.product-new .container .menu .wrap-menu {
+      width: 50%;
+      display: -ms-flexbox;
+      display: flex; }
+    body.product-new .container .menu p {
+      margin: 0; }
+    body.product-new .container .menu a {
+      text-decoration: none; }
+    body.product-new .container .menu .list-product, body.product-new .container .menu .price-sort, body.product-new .container .menu .top-sales, body.product-new .container .menu .discount-products {
+      width: 50%;
+      position: relative; }
+    body.product-new .container .menu .title-menu {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 0 20px;
+      cursor: pointer;
+      border-right: 1px solid #ffffff;
+      height: 50px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -webkit-justify-content: space-between;
+      transition: all 0.5s ease-in-out; }
+      body.product-new .container .menu .title-menu .plus-icon {
+        font-size: 0.8em;
+        transition: all 0.5s ease-in-out; }
+      body.product-new .container .menu .title-menu:hover {
+        background-color: #444; }
+    body.product-new .container .menu ul.level-1 {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 50px;
+      z-index: 2;
+      width: 100%;
+      transition: all 0.5s ease-in-out; }
+      body.product-new .container .menu ul.level-1 li {
+        background-color: #eeeeee;
+        width: 100%;
+        padding: 14px 20px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        position: relative; }
+        body.product-new .container .menu ul.level-1 li .title-sub-menu {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -webkit-align-items: center;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          transition: all 0.5s ease-in-out; }
+          body.product-new .container .menu ul.level-1 li .title-sub-menu .sub-plus-icon {
+            font-size: 0.8em;
+            transition: all 0.5s ease-in-out; }
+          body.product-new .container .menu ul.level-1 li .title-sub-menu .sub-minus-icon {
+            display: none;
+            font-size: 0.8em;
+            transition: all 0.5s ease-in-out; }
+        body.product-new .container .menu ul.level-1 li:hover {
+          background-color: #ffffff; }
+          body.product-new .container .menu ul.level-1 li:hover .sub-minus-icon {
+            display: block; }
+          body.product-new .container .menu ul.level-1 li:hover .sub-plus-icon {
+            display: none; }
+        body.product-new .container .menu ul.level-1 li ul.level-2 {
+          display: none;
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 100%;
+          z-index: 2;
+          transition: all 0.5s ease-in-out;
+          border: 1px solid #d1d1d1; }
+          body.product-new .container .menu ul.level-1 li ul.level-2 li {
+            background-color: #eeeeee;
+            width: 100%;
+            padding: 14px 54px;
+            cursor: pointer;
+            transition-duration: 0.7s; }
+            body.product-new .container .menu ul.level-1 li ul.level-2 li .sub-title {
+              padding: 14px 24px; }
+            body.product-new .container .menu ul.level-1 li ul.level-2 li:hover {
+              background-color: #ffffff; }
+              body.product-new .container .menu ul.level-1 li ul.level-2 li:hover .sub-title {
+                background-color: #eeeeee; }
+          body.product-new .container .menu ul.level-1 li ul.level-2 li.have-child {
+            padding: 0; }
+      body.product-new .container .menu ul.level-1 #somi-shirt:hover #somi-shirt-content {
+        display: block; }
+      body.product-new .container .menu ul.level-1 #polo-shirt:hover #polo-shirt-content {
+        display: block; }
+    body.product-new .container .menu #list-product:hover #list-product-menu {
+      display: block; }
+    body.product-new .container .menu #price-sort:hover #price-sort-menu {
+      display: block; }
   body.product-new .container .row-product {
     padding: 0 40px; }
   body.product-new .container .product-box {
@@ -4014,7 +4125,111 @@ body.product-new .bottom-spacing {
       display: -ms-flexbox;
       display: flex; }
       body.product-new .container .banner .banner-item .banner-text {
-        padding: 80px 40px 70px 60px; } }
+        padding: 80px 40px 70px 60px; }
+  body.product-new .container .menu {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px; }
+    body.product-new .container .menu .wrap-menu {
+      width: 50%;
+      display: -ms-flexbox;
+      display: flex; }
+    body.product-new .container .menu p {
+      margin: 0; }
+    body.product-new .container .menu a {
+      text-decoration: none; }
+    body.product-new .container .menu .list-product, body.product-new .container .menu .price-sort, body.product-new .container .menu .top-sales, body.product-new .container .menu .discount-products {
+      width: 50%;
+      position: relative; }
+    body.product-new .container .menu .title-menu {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 0 20px;
+      cursor: pointer;
+      border-right: 1px solid #ffffff;
+      height: 50px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -webkit-justify-content: space-between;
+      transition: all 0.5s ease-in-out; }
+      body.product-new .container .menu .title-menu .plus-icon {
+        font-size: 0.8em;
+        transition: all 0.5s ease-in-out; }
+      body.product-new .container .menu .title-menu:hover {
+        background-color: #444; }
+    body.product-new .container .menu ul.level-1 {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 50px;
+      z-index: 2;
+      width: 100%;
+      transition: all 0.5s ease-in-out; }
+      body.product-new .container .menu ul.level-1 li {
+        background-color: #eeeeee;
+        width: 100%;
+        padding: 14px 20px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        position: relative; }
+        body.product-new .container .menu ul.level-1 li .title-sub-menu {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -webkit-align-items: center;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          transition: all 0.5s ease-in-out; }
+          body.product-new .container .menu ul.level-1 li .title-sub-menu .sub-plus-icon {
+            font-size: 0.8em;
+            transition: all 0.5s ease-in-out; }
+          body.product-new .container .menu ul.level-1 li .title-sub-menu .sub-minus-icon {
+            display: none;
+            font-size: 0.8em;
+            transition: all 0.5s ease-in-out; }
+        body.product-new .container .menu ul.level-1 li:hover {
+          background-color: #ffffff; }
+          body.product-new .container .menu ul.level-1 li:hover .sub-minus-icon {
+            display: block; }
+          body.product-new .container .menu ul.level-1 li:hover .sub-plus-icon {
+            display: none; }
+        body.product-new .container .menu ul.level-1 li ul.level-2 {
+          display: none;
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 100%;
+          z-index: 2;
+          transition: all 0.5s ease-in-out;
+          border: 1px solid #d1d1d1; }
+          body.product-new .container .menu ul.level-1 li ul.level-2 li {
+            background-color: #eeeeee;
+            width: 100%;
+            padding: 14px 54px;
+            cursor: pointer;
+            transition-duration: 0.7s; }
+            body.product-new .container .menu ul.level-1 li ul.level-2 li .sub-title {
+              padding: 14px 24px; }
+            body.product-new .container .menu ul.level-1 li ul.level-2 li:hover {
+              background-color: #ffffff; }
+              body.product-new .container .menu ul.level-1 li ul.level-2 li:hover .sub-title {
+                background-color: #eeeeee; }
+          body.product-new .container .menu ul.level-1 li ul.level-2 li.have-child {
+            padding: 0; }
+      body.product-new .container .menu ul.level-1 #somi-shirt:hover #somi-shirt-content {
+        display: block; }
+      body.product-new .container .menu ul.level-1 #polo-shirt:hover #polo-shirt-content {
+        display: block; }
+    body.product-new .container .menu #list-product:hover #list-product-menu {
+      display: block; }
+    body.product-new .container .menu #price-sort:hover #price-sort-menu {
+      display: block; } }
 
 body.product-detail a {
   text-decoration: none; }
