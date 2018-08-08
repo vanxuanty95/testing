@@ -3907,7 +3907,7 @@ body.product-new .container .product-box {
       transition: all 0.5s ease-in-out; }
 
 body.product-new .container:hover {
-  opacity: 1; }
+  opacity: 0.5; }
 
 body.product-new .color-style {
   width: 20px;
